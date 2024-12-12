@@ -12,22 +12,25 @@ import leetcode from "../public/Leetcode.png";
 import githubContributions from "../public/github-contributions.png";
 import gfgContributions from "../public/GfgContributions.png";
 import githubStreak from "../public/github-streak.png";
+import codeStudio from "../public/codeStudio.png";
 import Image from "next/image";
 
 const Profiles = () => {
   return (
-    <BentoGrid className="max-w-4xl  md:auto-rows-[11rem]">
-      {items.map((item, i) => (
-        <BentoGridItem
-          key={i}
-          title={item.title}
-          //   description={item.description}
-          header={item.header}
-          className={item.className}
-          //   icon={item.icon}
-        />
-      ))}
-    </BentoGrid>
+    <div id="profiles">
+      <BentoGrid className="max-w-4xl  md:auto-rows-[11rem]">
+        {items.map((item, i) => (
+          <BentoGridItem
+            key={i}
+            title={item.title}
+            //   description={item.description}
+            header={item.header}
+            className={item.className}
+            //   icon={item.icon}
+          />
+        ))}
+      </BentoGrid>
+    </div>
   );
 };
 
@@ -105,12 +108,27 @@ const items = [
       <Image
         src={gfgContributions}
         alt="LeetCode Submissions"
-        className="rounded-xl"
+        className="rounded-xl h-[9rem]"
         // width={400}
         height={300}
       />
     ),
-    className: "md:col-span-2 items-center justify-center h-[13rem]",
+    className: "md:col-span-2 items-center justify-center ",
     // icon: <IconClipboardCopy className="h-4 w-4 text-neutral-500" />,
+  },
+  {
+    title: "Leetcode Solutions",
+    // description: "Discover the beauty of thoughtful and functional design.",
+    header: (
+      <Image
+        src={codeStudio}
+        alt="LeetCode Submissions"
+        className="rounded-xl h-[9rem] w-[15rem]"
+        // width={400}
+        height={800}
+      />
+    ),
+    className: "md:col-span-1 items-center justify-center",
+    // icon: <IconSignature className="h-4 w-4 text-neutral-500" />,
   },
 ];
