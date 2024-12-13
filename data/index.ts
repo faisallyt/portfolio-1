@@ -174,45 +174,90 @@ export const companies = [
 export const workExperience = [
   {
     id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
+    title: "Software Developer ",
+    company: "Jaggery Consulting",
+    desc: "Built a SEO Tool  using fastApi and React js, Used AWS SES , celery, redis to build a Emailing System ",
     className: "md:col-span-2",
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/js.svg",
+      "/Aws.svg",
+      "redis.svg",
+      "/redux.svg",
+      "/go.svg",
+      "/fastApi.svg",
+      "/python.svg",
+      "/postgres.svg",
+      "/mysql.svg",
+    ],
     thumbnail: "/exp1.svg",
   },
   {
     id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
+    title: "Software Developer Intern",
+    company: "Grocliq",
+    desc: "Contributed in Building an AI Article Writer with SEO optimizations",
     className: "md:col-span-2", // change to md:col-span-2
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/js.svg",
+
+      "/redux.svg",
+
+      "/fastApi.svg",
+      "/python.svg",
+    ],
     thumbnail: "/exp2.svg",
   },
   {
     id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
+    title: "Software Developer Intern",
+    company: "Destino Technology",
+    desc: "Contributed in Development of  a News Media Portal using  ",
     className: "md:col-span-2", // change to md:col-span-2
+    iconLists: [
+      "/re.svg",
+      "/tail.svg",
+      "/js.svg",
+      "/node.svg",
+      "/redux.svg",
+      "/express.svg",
+      "/mongodb.svg",
+    ],
     thumbnail: "/exp3.svg",
   },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
-  },
+  // {
+  //   id: 4,
+  //   title: "Lead Frontend Developer",
+  //   company: "Jaggery Consulting",
+  //   desc: "Developed and maintained user-facing features using modern frontend technologies.",
+  //   className: "md:col-span-2",
+  //   iconLists: ["/re.svg", "/tail.svg", "/js.svg", "/node.svg", "/redux.svg"],
+  //   thumbnail: "/exp4.svg",
+  // },
 ];
 
 export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/faisallyt",
   },
   {
     id: 2,
     img: "/twit.svg",
+    link: "https://x.com/Faisalllll_d",
   },
   {
     id: 3,
     img: "/link.svg",
+    link: "https://www.linkedin.com/in/faisal-dilshad-8ba7181b8",
+  },
+  {
+    id: 4,
+    img: "/leetcode-logo.svg",
+    link: "https://leetcode.com/u/fdiledu/",
   },
 ];

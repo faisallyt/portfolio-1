@@ -27,21 +27,37 @@ const Experience = () => {
               borderRadius: `calc(1.75rem* 0.96)`,
             }}
             // remove bg-white dark:bg-slate-900
-            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800"
-          >
+            className="flex-1 text-black dark:text-white border-neutral-200 dark:border-slate-800">
             <div className="flex lg:flex-row flex-col lg:items-center p-3 py-6 md:p-5 lg:p-10 gap-2">
               <img
                 src={card.thumbnail}
                 alt={card.thumbnail}
                 className="lg:w-32 md:w-20 w-16"
               />
-              <div className="lg:ms-5">
-                <h1 className="text-start text-xl md:text-2xl font-bold">
-                  {card.title}
-                </h1>
-                <p className="text-start text-white-100 mt-3 font-semibold">
-                  {card.desc}
-                </p>
+              <div className="lg:ms-5 flex flex-col gap-2">
+                <div className="">
+                  <h1 className="text-start text-xl md:text-2xl font-bold">
+                    {card.title}
+                  </h1>
+                  <p className="text-start text-white-100 mt-3 font-semibold">
+                    {card?.company}
+                  </p>
+                  <p className="text-start text-white-100 mt-3 font-semibold">
+                    {card.desc}
+                  </p>
+                </div>
+                <div className="flex items-center">
+                  {card.iconLists.map((icon, index) => (
+                    <div
+                      key={index}
+                      className="border border-white/[.2] rounded-full bg-black lg:w-10 lg:h-10 w-8 h-8 flex justify-center items-center"
+                      style={{
+                        transform: `translateX(-${5 * index + 2}px)`,
+                      }}>
+                      <img src={icon} alt="icon5" className="p-2" />
+                    </div>
+                  ))}
+                </div>
               </div>
             </div>
           </Button>
