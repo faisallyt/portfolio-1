@@ -61,7 +61,7 @@ export const MacbookScroll = ({
     [0, 0.3],
     [0.6, isMobile ? 1 : 1.5]
   );
-  const translate = useTransform(scrollYProgress, [0, 1], [0, 700]);
+  const translate = useTransform(scrollYProgress, [0, 1], [0, 800]);
   const rotate = useTransform(scrollYProgress, [0.1, 0.12, 0.3], [-28, -28, 0]);
   const textTransform = useTransform(scrollYProgress, [0, 0.3], [0, 100]);
   const textOpacity = useTransform(scrollYProgress, [0, 0.2], [1, 0]);
@@ -69,16 +69,17 @@ export const MacbookScroll = ({
   return (
     <div
       ref={ref}
-      className="min-h-[150vh]  flex flex-col items-center py-0 md:pb-65 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50">
+      className="  flex flex-col items-center py-0 md:pb-65 justify-start flex-shrink-0 [perspective:800px] transform md:scale-100  scale-[0.35] sm:scale-50">
       <motion.h2
         style={{
           translateY: textTransform,
           opacity: textOpacity,
         }}
-        className="dark:text-white text-neutral-800 text-3xl font-bold mb-20 text-center">
+        className="dark:text-white text-neutral-800 text-7xl md:3xl font-bold mb-20 text-center">
         {title || (
           <span>
-            A Picture From The Last International Client. <br />
+            A Picture with The Last{" "}
+            <span className="text-purple">International Client.</span> <br />
           </span>
         )}
       </motion.h2>

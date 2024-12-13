@@ -47,7 +47,7 @@ const Clients = () => {
     //     </div>
     //   </div>
     // </section>
-    <section id="testimonials" className="py-20">
+    <section id="testimonials">
       <MacbookScroll src="" />
     </section>
   );

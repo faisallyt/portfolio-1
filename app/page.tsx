@@ -11,6 +11,7 @@ import Experience from "@/components/Experience";
 import RecentProjects from "@/components/RecentProjects";
 import { FloatingNav } from "@/components/ui/FloatingNavbar";
 import Profiles from "@/components/Profiles";
+import Skills from "@/components/Skills";
 
 const Home = () => {
   return (
@@ -21,6 +22,7 @@ const Home = () => {
         <Grid />
         <Profiles />
         <RecentProjects />
+        <Skills />
         <Clients />
         <Experience />
         {/* <Approach /> */}
